@@ -49,7 +49,13 @@ function playRound(humanChoice, computerChoice){
 }
 
 
-humanChoice = getHumanChoice()
-computerChoice = getComputerChoice();
-playRound(humanChoice, computerChoice);
+function playGame(){
+    for (let iteration = 1; iteration <= 5; iteration++){
+        humanChoice = getHumanChoice()
+        computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
+}
+
+playGame();
 
