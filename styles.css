@@ -19,6 +19,9 @@ html {
 .button-container input{
     width: 30%;
     height: 60%;
+    background-color: bisque;
+    border: 1px solid pink;
+    border-radius: 15%;
 }
 
 .button-container input:hover {

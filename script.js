@@ -13,7 +13,17 @@ function getComputerChoice(){
 choices.forEach(function (item) {
     item.addEventListener("click", (event) => {
         let humanChoice = event.target.id;
-        playRound(humanChoice, getComputerChoice());
+        if (humanScore == 5 || computerScore == 5) {
+            if (humanScore == 5){
+                result.textContent = `You won the game!`
+            } else {
+                result.textContent = `You lose the game!`
+            }
+            
+        } else {
+            playRound(humanChoice, getComputerChoice());
+        }
+        
     });
 });
 
