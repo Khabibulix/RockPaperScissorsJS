@@ -1,20 +1,22 @@
 const CHOICES = ["rock", "paper", "scissors"];
 let humanScore = 0;
 let computerScore = 0;
-let humanChoice = "";
 let choices = document.querySelectorAll(".button-container input");
 let result = document.querySelector(".result-container");
-
-choices.forEach(function (item) {
-    item.addEventListener("click", (event) => {
-        humanChoice = event.target.id;
-    });
-});
 
 
 function getComputerChoice(){
     return CHOICES[Math.floor(Math.random() * 2)]
 }
+
+
+choices.forEach(function (item) {
+    item.addEventListener("click", (event) => {
+        let humanChoice = event.target.id;
+        playRound(humanChoice, getComputerChoice());
+    });
+});
+
 
 
 function playRound(humanChoice, computerChoice){
@@ -49,4 +51,3 @@ function playRound(humanChoice, computerChoice){
 }
 
 
-playRound(humanChoice, getComputerChoice());
