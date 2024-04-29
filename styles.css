@@ -17,13 +17,18 @@ html {
     height: 300px;    
 }
 
-.button-container button{
-    width: 20%;
-    height: 30%;
+.button-container input{
+    width: 30%;
+    height: 60%;
+}
+
+.button-container input:hover {
+    background-color: pink;
+    border: 1px solid bisque;
 }
 
 .result-container {
     border: 3px solid black;
     width: 50%;
-    height: 100px;
+    height: 100px;.
 }
