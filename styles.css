@@ -1,0 +1,29 @@
+html {
+    background-color: papayawhip;
+}
+
+
+.result-container, .button-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-container {
+    border: 3px solid black;
+    width: 50%;
+    height: 300px;    
+}
+
+.button-container button{
+    width: 20%;
+    height: 30%;
+}
+
+.result-container {
+    border: 3px solid black;
+    width: 50%;
+    height: 100px;
+}
